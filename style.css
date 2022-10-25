@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC&family=Saira+Extra+Condensed&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 15px;
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202,0.12958686892725846) 20%, rgba(241,238,240,0.6561975131849616) 32%, rgba(183,188,195,0.8298669809720763) 100%);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+h2{
+    margin: 10px 0 20px;
+    text-align: center;
+    font-size: 20px;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+input[type=checkbox] {
+	margin-right: 0;
+}
+
+.container{
+    padding: 30px;
+    width: 350px;
+    max-width: 100%;
+    border-radius: 10px;
+    background: rgb(104,13,241);
+    background: linear-gradient(45deg, rgba(104,13,241,0.3368697820925245) 0%, rgba(100,49,91,0.9447129193474265) 79%, rgba(100,49,91,1) 100%, rgba(98,66,21,0.7486344879748774) 100%);
+    box-shadow: rgba(57, 57, 87, 0.818) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.resultContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    padding: 12px 9px;
+    height: 50px;
+	width: 100%;
+    letter-spacing: 1px;
+    background: rgb(222,209,220);
+    background-color: rgba(251, 234, 234, 0.529);
+    border-radius: 4px;
+}
+
+#clipboard{
+    display: inline-block;
+    position: fixed;
+    margin-left: 235px;
+    border-radius: 4px;
+    background-color: rgb(10, 126, 10);
+    transition: all 0.4s;
+}
+#clipboard:hover{
+    background-color: rgb(15, 238, 15);
+}
+.resultContainer #result {
+    word-wrap: break-word;
+    max-width: calc(100% - 40px);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: 'Encode Sans SC', sans-serif;
+
+    margin-left: 13px;
+}
+
+.resultContainer .btn{
+    cursor: pointer;
+	font-size: 16px;
+	padding: 8px 12px;
+    border: none;
+    outline: none;
+}
+
+.btn-large {
+	display: block;
+	width: 100%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.9s;
+}
+.btn-large:hover{
+    background-color: rgba(106, 185, 106, 0.832);
+    color: whitesmoke;
+}
+
+.btn{
+    padding: 8px 12px;
+}
+
+#generate{
+    margin-top: 5px;
+}
+
+.passwordSetting{
+    margin-top: 10px;
+    background-color: rgba(47, 2, 2, 0.426);
+    padding: 4px;
+    border-radius: 5px;
+}
+#length{
+    height: 20px;
+    border-radius: 3px;
+    width: 70px;
+    background-color: rgb(222, 232, 222) ;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+#length[type='number']{
+    margin-left: 3px;
+}
+.setPassProperties{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px;
+    color: white;
+}
+
+.mch{
+    margin-top: 100px;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+.mch a{
+    text-decoration: none;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    letter-spacing: 0.2px;
+    font-weight: bold;
+    color: rgba(55, 5, 193, 0.803);
+}
+
+/* media-queries */
+@media screen and (max-width: 400px) {
+	.resultContainer {
+		font-size: 14px;
+	}
+}
+/* mondalCodeHub - 2022  */
